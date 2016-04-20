@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # -*- coding: iso-8859-1 -*-
 
+# a simple, do nothing gui app
+
+# sebsauvage.net/python/gui/#import
+
+
 import Tkinter
 
 class simpleapp_tk(Tkinter.Tk):
