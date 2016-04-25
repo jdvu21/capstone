@@ -7,6 +7,7 @@
 
 
 import Tkinter
+import vlc
 
 class simpleapp_tk(Tkinter.Tk):
     def __init__(self,parent):
@@ -22,6 +23,9 @@ class simpleapp_tk(Tkinter.Tk):
 
         button = Tkinter.Button(self,text=u"Click me !")
         button.grid(column=1,row=0)
+
+        Player = vlc.MediaPlayer("test1.mp3")
+        Player.play()
 
 if __name__ == "__main__":
     app = simpleapp_tk(None)
